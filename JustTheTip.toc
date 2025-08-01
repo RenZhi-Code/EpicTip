@@ -1,9 +1,0 @@
-## Interface: 110105
-## Title: Just the tip
-## Author: Knutballs - Ravencrest EU
-## Notes: A simple lightweight tooltip
-## Version: V04.05.2025.02
-## SavedVariables: JustTheTipDB
-
-JustTheTip_menu.lua
-JustTheTip.lua
