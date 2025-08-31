@@ -1,0 +1,56 @@
+## Interface: 110107, 110200
+## Title: |cFFFF0000Epic|r|cFF33CCFFTip|r 
+## Author: knutballs @EU Ravencrest
+## Version: 31.08.25.20
+## Notes: A simple lightweight tooltip with enhanced features 
+## SavedVariables: EpicTipSettings
+## OptionalDeps: Ace3
+
+# Ace3 Libraries
+embeds.xml
+
+# Localization (WoW auto-loads correct locale)
+Localization\Localization.lua
+
+
+# Core modules (essential - always loaded)
+Core\ErrorHandler.lua
+Core\APICompatibility.lua
+Core\Utils.lua
+Modules\FontManager.lua
+Modules\MemoryPool.lua
+Modules\CacheManager.lua
+Modules\IterationUtils.lua
+
+Core\ColorUtils.lua
+Core\TooltipStyling.lua
+Core\TooltipAnchoring.lua
+Data\StaticData.lua
+Modules\Config.lua
+Modules\Tooltip.lua
+Modules\CursorGlow.lua
+Modules\Ring.lua
+
+# Modular Core System (extracted from Core.lua to maintain file size targets)
+Core\Events.lua
+
+
+# Modular UI System (replaces massive config table in Core.lua)
+UI\Config\General.lua
+UI\Config\PlayerInfo.lua
+UI\Config\Appearance.lua  
+UI\Config\Features.lua
+UI\Config\TrueStat.lua
+UI\Config\Cursor.lua
+UI\ConfigManager.lua
+
+# Optional modules (loaded when features are enabled - conditional initialization saves memory)
+Modules\TextFiltering.lua
+Modules\MythicPlusInfo.lua
+Modules\PvPInfo.lua
+Modules\ItemInfo.lua
+Modules\StatValues.lua
+Modules\MountInfo.lua
+
+# Main initialization (ConfigManager system)
+Core.lua
