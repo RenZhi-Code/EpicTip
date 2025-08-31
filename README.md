@@ -1,262 +1,103 @@
-# Just the Tip
+![Version](https://img.shields.io/badge/version-30.08.25.20-blue) ![Game](https://img.shields.io/badge/WoW-The War Within-orange) ![Interface Version](https://img.shields.io/badge/Version-11.2-brightgreen) ![License](https://img.shields.io/badge/license-All Rights Reserved-red)
 
-![Version](https://img.shields.io/badge/version-01.08.25.10-blue) ![WoW](https://img.shields.io/badge/WoW-The%20War%20Within-orange) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+# EpicTip - Enhanced Tooltips for World of Warcraft
 
-A comprehensive World of Warcraft addon that enhances tooltips with detailed player information, item comparisons, stat calculations, mount details, and includes a customizable cursor ring for improved visibility.
+EpicTip is a lightweight yet feature-rich tooltip enhancement addon for World of Warcraft that transforms the default tooltips into informative, customizable information panels. With performance optimisation at its core, EpicTip provides extensive player, item, and world information without compromising game performance.
 
-##  Features
+## Key Features
 
-###  **Enhanced Player Tooltips**
-- **Class-Colored Names** - Player names displayed in their class colors
-- **Class & Role Icons** - Visual indicators for class and role (Tank/Healer/DPS)
-- **Specialization Display** - Shows current spec (e.g., "Unholy Death Knight")
-- **Item Level** - Displays average equipped item level
-- **Target Information** - Shows who the player is targeting
-- **Guild Formatting** - Properly formatted guild names with `<brackets>`
-- **Faction Colors** - Blue for Alliance, Red for Horde
-- **Clean Display** - Removes clutter like "(Player)" text
+### Player Information
 
-###  **Smart Item Tooltips**
-- **Item Level Comparison** - Compare with equipped gear
-  - 🟢 **Green (+X)** for upgrades
-  - 🔴 **Red (-X)** for downgrades  
-  - 🟡 **Yellow (=)** for same level
-- **Enhanced Item Details** - Type, subtype, and equipment slot info
-- **Source Information** - Shows acquisition method (Drop, Quest, Vendor, etc.)
-- **Multi-slot Support** - Handles rings, trinkets, and weapon combinations
-- **Item Search** - Find items quickly with `/jttitem <name>`
+*   **Item Level Display**: Shows average item level for any player character
+*   **Specialisation & Role**: Displays current specialisation and role information
+*   **Class & Role Icons**: Visual indicators for quick identification
+*   **Guild Information**: Shows guild name and rank
+*   **Target Tracking**: Displays what a player is currently targeting
+*   **Health Information**: Customisable health bar and numerical values
 
-###  **Advanced Stat Calculations**
-- **True Stat Values** - Displays actual values after diminishing returns
-- **Rating Breakpoints** - Shows rating needed for next percentage tier
-- **Diminishing Returns** - Visual indicators for stat penalties
-- **Complete Coverage** - All secondary and tertiary stats
-- **TWW Compatible** - Updated for The War Within expansion
+### Competitive Statistics
 
+*   **Mythic+ Ratings**: Current season score and highest key completed
+*   **PvP Ratings**: Arena and battleground ratings across all brackets
+*   **Detailed Statistics**: Completion ratios and success rates for Mythic+ content
 
-###  **Mount Recognition System**
-- **Automatic Detection** - Identifies mounts on players
-- **Detailed Information** - Name, type, and acquisition source
-- **Collection Status** - Shows if you own the mount
-- **Mount Categories** - Ground, Flying, Aquatic classification
-- **Smart Conflict Avoidance** - Works alongside other mount addons
+### World Content Enhancements
 
-###  **Cursor Ring**
-- **Visual Enhancement** - Colored ring follows your mouse cursor
-- **Combat Awareness** - Different opacity in/out of combat
-- **Class Color Integration** - Automatically matches your class
-- **Multiple Styles** - Default, Thin, Thick, or Solid textures
-- **Fully Customizable** - Size, colors, transparency, and behavior
-- **High Visibility Mode** - Bright green option for accessibility
+*   **Mount Information**: Detailed data on mounts including name, source, and collection status
+*   **NPC Information**: Enhanced tooltips for non-player characters
+*   **Boss Data**: Information about raid bosses and their mechanics
 
-##  Installation
+### Visual Customisation
 
-### Automatic (Recommended)
-1. Install via **CurseForge App** or **WoWUp**
-2. Launch World of Warcraft
-3. Configure via `/jtt config`
+*   **Background Styling**: Custom colours, transparency, and reaction-based colouring
+*   **Border Customisation**: Adjustable width, colour, and class-based colouring
+*   **Font Selection**: Over 45 font options with size and style controls
+*   **Text Filtering**: Options to hide specific tooltip elements
+*   **Tooltip Positioning**: Multiple anchoring options including mouse-following mode
 
-### Manual
-1. Download the latest release
-2. Extract to `World of Warcraft\_retail_\Interface\AddOns\`
-3. Ensure folder is named `JustTheTip`
-4. Restart WoW or `/reload`
+### Performance Features
 
-##  Configuration
+*   **Modular Design**: Only load features you use to save memory
+*   **Smart Caching**: Efficient data storage with automatic cleanup
+*   **Combat Optimisation**: Reduces processing during combat for better performance
+*   **Memory Management**: Frame pooling and object reuse to minimise garbage collection
 
-### Quick Setup
-```
-/jtt config          # Open configuration panel
-/jtt ring show       # Enable cursor ring
-/jtt debug           # Toggle debug mode
-```
+### Cursor Effects
 
-### Main Settings
+*   **Cursor Glow**: Customisable glow effects that follow your cursor
+*   **Tail Effects**: Trailing animations with multiple effect styles
+*   **Pulse Animation**: Pulsing size effects for dynamic visuals
+*   **Combat Visibility**: Options to show/hide effects based on combat state
 
-| Category | Setting | Default | Description |
-|----------|---------|---------|-------------|
-| **General** | Enable Tooltip | ✅ | Master switch for all features |
-| **General** | Anchor to Mouse | ✅ | Tooltips follow cursor |
-| **General** | Tooltip Scale | 1.0 | Size multiplier (0.5-2.0) |
-| **Player Info** | Show Item Level | ✅ | Display player's average ilvl |
-| **Player Info** | Show Specialization | ✅ | Current spec information |
-| **Player Info** | Show Target | ✅ | What player is targeting |
-| **Player Info** | Class Icons | ✅ | Visual class indicators |
-| **Player Info** | Role Icons | ✅ | Tank/Healer/DPS icons |
-| **Features** | Mythic+ Rating | ❌ | M+ score (optional) |
-| **Features** | PvP Rating | ❌ | Arena/RBG rating (optional) |
-| **Features** | Item Information | ✅ | Enhanced item tooltips |
-| **Features** | Stat Values | ✅ | Calculated stat weights |
-| **Features** | Mount Information | ✅ | Mount details on hover |
-| **Ring** | Enable Ring | ❌ | Cursor ring visibility |
-| **Ring** | Ring Texture | Default | Visual style |
-| **Ring** | Use Class Color | ✅ | Match class colors |
-| **Ring** | Combat Alpha | 0.7 | Opacity during combat |
-| **Ring** | Out of Combat Alpha | 0.3 | Opacity when safe |
+## Configuration
 
-##  Commands
+EpicTip features an intuitive tabbed configuration interface accessible through:
 
-### Core Commands
-```bash
-/jtt config          # Open configuration panel
-/jtt debug           # Toggle debug information
-/jtt test            # Show addon status
-/jtt save            # Force save settings
-```
+*   **/et config** - Open the configuration panel
+*   **/et options** - Alternative command to open configuration
 
-### Cursor Ring
-```bash
-/jtt ring show       # Enable and show ring
-/jtt ring hide       # Hide ring (keep enabled)
-/jtt ring toggle     # Toggle visibility
-/jtt ring enable     # Enable ring system
-/jtt ring disable    # Disable ring system
-```
+The configuration is organised into logical sections:
 
-### Item Search
-```bash
-/jttitem <name>      # Search for items
-/jttsearch <name>    # Alternative search
-```
+*   **General**: Core settings including enable/disable toggle and tooltip scale
+*   **Player Info**: Controls for player-specific information display
+*   **Appearance**: Visual customisation options for backgrounds, borders, and fonts
+*   **Features**: Advanced functionality toggles for Mythic+, PvP, and world content
+*   **Cursor**: Complete cursor glow effect configuration
 
-##  Advanced Features
+## Slash Commands
 
-### Tooltip Behavior
-- **Mouse Anchoring**: Tooltips follow cursor or stay in fixed position
-- **Combat Hiding**: Optional tooltip hiding during combat
-- **Health Bar Control**: Show/hide unit health bars
-- **Background Customization**: Custom colors and opacity
-- **Scale Options**: Resize tooltips from 50% to 200%
+*   **/et config** - Open configuration panel
+*   **/et debug** - Toggle debug mode for troubleshooting
+*   **/et anchor** - Toggle tooltip positioning mode
+*   **/et enable/disable** - Enable or disable the addon
+*   **/et status** - Show current addon status
+*   **/et test** - Test tooltip on current target or mouseover
+*   **/et reload** - Reload the user interface
 
-### Performance Optimizations
-- **Inspection Throttling**: Prevents API spam
-- **Smart Caching**: Reduces repeated calculations
-- **Event Optimization**: Minimal CPU usage
-- **Memory Management**: ~2-3MB typical usage
+For cursor glow effects:
 
-### Compatibility
-- **The War Within** (11.0+) fully supported
-- **Dragonflight** (10.0+) compatible
-- **Ace3 Framework** for stability
-- **Modern APIs** with legacy fallbacks
+*   **/et glow enable/disable/toggle** - Control cursor glow functionality
+*   **/et glow test** - Diagnostics for cursor glow effects
 
-##  Troubleshooting
+## Technical Information
 
-### Common Issues
+EpicTip is built using the Ace3 framework for stability and performance. It follows modern WoW addon development practices with:
 
-**Q: Tooltips not appearing**
-A: Check `/jtt config` → General → Enable Tooltip
+*   Event-driven architecture for efficient processing
+*   Modular code organisation for easy maintenance
+*   Profile support for different character configurations
+*   Localisation support for internationalisation
 
-**Q: Ring not visible**
-A: Use `/jtt ring show` and check visibility settings
+## Requirements
 
-**Q: Item comparisons incorrect**
-A: Ensure you have gear equipped in compared slots
+*   World of Warcraft Retail (latest build)
+*   No external dependencies beyond included libraries
 
-**Q: Mount info missing**
-A: Feature works best on nearby players and yourself
+## Support
 
-### Debug Information
-Enable debug mode for detailed troubleshooting:
-```bash
-/jtt debug           # Toggle debug output
-/jtt test            # Show module status
-```
+For bug reports, feature requests, or general support, please visit the addon's page on CurseForge. When reporting issues, please include:
 
-### Reset Options
-```bash
-# Reset all settings to defaults
-Delete WTF/Account/[Account]/SavedVariables/JustTheTip.lua
-```
-
-##  Technical Details
-
-### System Requirements
-- **World of Warcraft**: The War Within (11.0.7+)
-- **Dependencies**: None (Ace3 libraries included)
-- **Memory**: ~2-3MB typical usage
-- **CPU**: Minimal impact, optimized event handling
-
-### Database Structure
-- **Saved Variables**: `JustTheTipSettings`
-- **Profile System**: Per-character or account-wide
-- **Backup**: Automatic settings preservation
-- **Migration**: Seamless updates
-
-### Module Architecture
-```
-JustTheTip/
-├── Core.lua              # Main addon framework
-├── Modules/
-│   ├── Tooltip.lua       # Player tooltip enhancements
-│   ├── ItemInfo.lua      # Item comparison system
-│   ├── StatValues.lua    # Stat calculations
-│   ├── MountInfo.lua     # Mount recognition
-│   ├── Ring.lua          # Cursor ring system
-│   └── Utils.lua         # Shared utilities
-└── Media/                # Ring textures
-```
-
-##  Customization Examples
-
-### Cursor Ring Setups
-
-**High Visibility Gaming**
-- Texture: Solid
-- Color: High Visibility (Green)
-- Combat Alpha: 1.0
-- Size: 32px
-
-**Minimal Class Theme**
-- Texture: Thin
-- Color: Class Color
-- Combat Alpha: 0.8
-- Out of Combat: 0.2
-- Size: 24px
-
-**Professional Streaming**
-- Texture: Default
-- Color: Custom (White)
-- Combat Alpha: 0.6
-- Size: 28px
-
-##  Version History
-
-### v01.08.25.10 (Current)
-- ✅ Complete tooltip system overhaul
-- ✅ Added cursor ring with combat awareness
-- ✅ Enhanced mount recognition
-- ✅ Improved stat calculations with diminishing returns
-- ✅ Better item comparison system
-- ✅ Full configuration interface
-- ✅ Performance optimizations
-
-### Previous Versions
-- Enhanced player information display
-- Basic item level comparisons
-- Simple tooltip modifications
-
-##  Development
-
-### Author
-**knutballs** - EU Ravencrest  
-*Addon development since 2025*
-
-### Credits
-- **Stat Data**: SimulationCraft & Pawn addon methodologies
-- **Framework**: Ace3 addon libraries
-- **Testing**: Guild members and community feedback
-- **Inspiration**: Various tooltip enhancement addons
-
-### Contributing
-This addon is currently in active development. For bug reports or feature requests:
-1. Use `/jtt debug` for diagnostic information
-2. Test with minimal addons to isolate issues
-3. Provide specific reproduction steps
-
-
-
-
-
-
-
+*   The error message (if any)
+*   Steps to reproduce the problem
+*   Your current EpicTip version
+*   Any other addons you're using that might interact with tooltips
