@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-30.08.25.20-blue) ![Game](https://img.shields.io/badge/WoW-The War Within-orange) ![Interface Version](https://img.shields.io/badge/Version-11.2-brightgreen) ![License](https://img.shields.io/badge/license-All Rights Reserved-red)
+![Version](https://img.shields.io/badge/version-31.08.25.20-blue) ![Game](https://img.shields.io/badge/WoW-The%20War%20Within-orange) ![Interface Version](https://img.shields.io/badge/Version-11.2-brightgreen) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)m
 
 # EpicTip - Enhanced Tooltips for World of Warcraft
 
