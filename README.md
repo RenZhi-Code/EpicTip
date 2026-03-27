@@ -1,8 +1,8 @@
-![Version](https://img.shields.io/badge/version-27.03.26.5f-blue) ![Game](https://img.shields.io/badge/WoW-The%20War%20Within-orange) ![Interface Version](https://img.shields.io/badge/Version-11.2-brightgreen) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+![Version](https://img.shields.io/badge/version-27.03.26.5f-blue) ![Game](https://img.shields.io/badge/WoW-Midnight-orange) ![Interface Version](https://img.shields.io/badge/Version-12.01-brightgreen) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
 # EpicTip - Enhanced Tooltips for World of Warcraft
 
-EpicTip is a lightweight yet feature-rich tooltip enhancement addon for World of Warcraft that transforms the default tooltips into informative, customizable information panels. With performance optimisation at its core, EpicTip provides extensive player, item, and world information without compromising game performance.
+EpicTip is a feature-rich tooltip enhancement addon for World of Warcraft that transforms the default tooltips into informative, customizable information panels. EpicTip provides extensive player, item, and world information without compromising game performance.
 
 ## Key Features
 
@@ -13,7 +13,6 @@ EpicTip is a lightweight yet feature-rich tooltip enhancement addon for World of
 *   **Class & Role Icons**: Visual indicators for quick identification
 *   **Guild Information**: Shows guild name and rank
 *   **Target Tracking**: Displays what a player is currently targeting
-*   **Health Information**: Customisable health bar and numerical values
 
 ### Competitive Statistics
 
@@ -78,26 +77,3 @@ For cursor glow effects:
 
 *   **/et glow enable/disable/toggle** - Control cursor glow functionality
 *   **/et glow test** - Diagnostics for cursor glow effects
-
-## Technical Information
-
-EpicTip is built using the Ace3 framework for stability and performance. It follows modern WoW addon development practices with:
-
-*   Event-driven architecture for efficient processing
-*   Modular code organisation for easy maintenance
-*   Profile support for different character configurations
-*   Localisation support for internationalisation
-
-## Requirements
-
-*   World of Warcraft Retail (latest build)
-*   No external dependencies beyond included libraries
-
-## Support
-
-For bug reports, feature requests, or general support, please visit the addon's page on CurseForge. When reporting issues, please include:
-
-*   The error message (if any)
-*   Steps to reproduce the problem
-*   Your current EpicTip version
-*   Any other addons you're using that might interact with tooltips
